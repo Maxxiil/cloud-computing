@@ -14,18 +14,16 @@ jobs:
     - name: Rsync Deployments Action
     # You may pin to the exact commit or the version.
     # uses: Burnett01/rsync-deployments@796cf0d5e4b535745ce49d7429f77cf39e25ef39
-    uses: Burnett01/rsync-deployments@7.0.1
-    with:
-      # The switches
-      switches: -avzr --delete
-      # The local path
-      path: 
-      # The remote path
-      remote_path: /var/www/html/cloud-computing
-      # The remote host
-      remote_host: 35.240.233.238
-      # The remote user
-      remote_user: asus
-      # The remote key
-      remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
-            
+      uses: Burnett01/rsync-deployments@7.0.1
+      with:
+        # The switches
+        switches: -avzr --delete
+        # The remote path
+        remote_path: /var/www/html/cloud-computing
+        # The remote host
+        remote_host: 35.240.233.238
+        # The remote user
+        remote_user: asus
+        # The remote key
+        remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
+              
