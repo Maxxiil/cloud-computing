@@ -25,7 +25,7 @@ jobs:
       # The remote host
       remote_host: 35.240.233.238
       # The remote user
-      remote_user: Maxxiil
+      remote_user: asus
       # The remote key
       remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
             
